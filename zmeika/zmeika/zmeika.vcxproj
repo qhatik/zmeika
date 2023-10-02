@@ -127,12 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="apple.cpp" />
+    <ClCompile Include="engine.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="map.cpp" />
+    <ClCompile Include="map.h" />
     <ClCompile Include="snake.cpp" />
+    <ClCompile Include="snake.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\OneDrive\Рабочий стол\READme.md" />
+    <ClInclude Include="apple.h" />
+    <ClInclude Include="engine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile.win" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

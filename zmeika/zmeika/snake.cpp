@@ -1,15 +1,6 @@
-float speed;
-int size;
-bool dead;
-	
-void Snake()
+#include "snake.h"
+
+snake::snake()
 {
-
-}
-
-
-int main()
-{
-
 
 }

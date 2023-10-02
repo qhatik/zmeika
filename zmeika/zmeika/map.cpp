@@ -1,15 +1,6 @@
-int length;
-int height;
-int object;
+#include "map.h"
 
-void generateMap()
-{
-
-}
-
-
-int main()
-{
+map::map() {
 
 
 }
