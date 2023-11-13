@@ -1,19 +1,18 @@
 #pragma once 
 #include <ios>
-const int MAX_LENGTH = 100;
-const int MAX_HEIGHT = 100;
+#include <vector>
 
 class map
 {
 	int length;
 	int height;
 
-	int fields[MAX_LENGTH][MAX_HEIGHT];
+    std::vector<std::vector<int>> fields;
 
 public:
 	map();
 
-    map(int initialLength, int initialHeight, int initialFields[MAX_LENGTH][MAX_HEIGHT]);
+    map(int initialLength, int initialHeight, const std::vector<std::vector<int>>& initialFields);
 
     map(const map& other);
 
