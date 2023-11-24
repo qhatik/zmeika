@@ -1,0 +1,159 @@
+\doxysection{snake Class Reference}
+\hypertarget{classsnake}{}\label{classsnake}\index{snake@{snake}}
+
+
+Class representing a snake object in the game.  
+
+
+
+
+{\ttfamily \#include $<$snake.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsnake_aebbd5eaa3883afef2f04ac6fdeef8f16}\label{classsnake_aebbd5eaa3883afef2f04ac6fdeef8f16} 
+{\bfseries snake} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the snake object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsnake_a2819ee7e4edb57367206a38e81db1bef}{snake}} (float initial\+Speed, int initial\+Size, bool is\+Dead)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the snake object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsnake_adee4db13d027dc03ea72642bfb6a9613}{snake}} (const \mbox{\hyperlink{classsnake}{snake}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the snake object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsnake}{snake}} \& \mbox{\hyperlink{classsnake_ae4d62b05d38c41f3148c60de72c7f103}{operator=}} (const \mbox{\hyperlink{classsnake}{snake}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the snake object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsnake_af1b96a5b9b16b6f88d92aed8dacb1168}{operator==}} (const \mbox{\hyperlink{classsnake}{snake}} \&other) const
+\begin{DoxyCompactList}\small\item\em Comparison operator for the snake object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{classsnake_a93ac89762a225a95ef87ba6c8dada279}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classsnake}{snake}} \&s)
+\begin{DoxyCompactList}\small\item\em Input operator for the snake object. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classsnake_aa9b628ff56363b3ab9b7c9873b27f8f0}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classsnake}{snake}} \&s)
+\begin{DoxyCompactList}\small\item\em Output operator for the snake object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a snake object in the game. 
+
+\begin{DoxyAuthor}{Author}
+Hotinschi Daniil {\itshape }-\/mail -\/ \href{mailto:danik03krut@gmail.com}{\texttt{ danik03krut@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classsnake_a2819ee7e4edb57367206a38e81db1bef}\label{classsnake_a2819ee7e4edb57367206a38e81db1bef} 
+\index{snake@{snake}!snake@{snake}}
+\index{snake@{snake}!snake@{snake}}
+\doxysubsubsection{\texorpdfstring{snake()}{snake()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily snake\+::snake (\begin{DoxyParamCaption}\item[{float}]{initial\+Speed,  }\item[{int}]{initial\+Size,  }\item[{bool}]{is\+Dead }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for the snake object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Speed} & Initial speed of the snake. \\
+\hline
+{\em initial\+Size} & Initial size of the snake. \\
+\hline
+{\em is\+Dead} & Flag indicating whether the snake is dead. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsnake_adee4db13d027dc03ea72642bfb6a9613}\label{classsnake_adee4db13d027dc03ea72642bfb6a9613} 
+\index{snake@{snake}!snake@{snake}}
+\index{snake@{snake}!snake@{snake}}
+\doxysubsubsection{\texorpdfstring{snake()}{snake()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily snake\+::snake (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsnake}{snake}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the snake object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another snake object being copied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsnake_ae4d62b05d38c41f3148c60de72c7f103}\label{classsnake_ae4d62b05d38c41f3148c60de72c7f103} 
+\index{snake@{snake}!operator=@{operator=}}
+\index{operator=@{operator=}!snake@{snake}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsnake}{snake}} \& snake\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsnake}{snake}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the snake object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another snake object being assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a reference to the current snake object. 
+\end{DoxyReturn}
+\Hypertarget{classsnake_af1b96a5b9b16b6f88d92aed8dacb1168}\label{classsnake_af1b96a5b9b16b6f88d92aed8dacb1168} 
+\index{snake@{snake}!operator==@{operator==}}
+\index{operator==@{operator==}!snake@{snake}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool snake\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classsnake}{snake}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator for the snake object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another snake object being compared to the current object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the objects are equal, and false otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classsnake_aa9b628ff56363b3ab9b7c9873b27f8f0}\label{classsnake_aa9b628ff56363b3ab9b7c9873b27f8f0} 
+\index{snake@{snake}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!snake@{snake}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classsnake}{snake}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output operator for the snake object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream. \\
+\hline
+{\em s} & Reference to the snake object being output. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classsnake_a93ac89762a225a95ef87ba6c8dada279}\label{classsnake_a93ac89762a225a95ef87ba6c8dada279} 
+\index{snake@{snake}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!snake@{snake}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classsnake}{snake}} \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Input operator for the snake object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream. \\
+\hline
+{\em s} & Reference to the snake object where values are read. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/smyrf/source/repos/zmeika/zmeika/snake.\+h\item 
+C\+:/\+Users/smyrf/source/repos/zmeika/zmeika/snake.\+cpp\end{DoxyCompactItemize}
