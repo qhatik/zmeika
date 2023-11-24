@@ -1,0 +1,160 @@
+\doxysection{map Class Reference}
+\hypertarget{classmap}{}\label{classmap}\index{map@{map}}
+
+
+Class representing the game map.  
+
+
+
+
+{\ttfamily \#include $<$map.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmap_abedfe6722ad83929739afd899c88fea4}\label{classmap_abedfe6722ad83929739afd899c88fea4} 
+{\bfseries map} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmap_acfeab2512fc09e4d548a58136db97f18}{map}} (int initial\+Length, int initial\+Height, const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&initial\+Fields)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmap_a5e4bbde3bc0bbd47966331c57827c47e}{map}} (const \mbox{\hyperlink{classmap}{map}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmap}{map}} \& \mbox{\hyperlink{classmap_aaf40abc9366f19c64c56c5de6365a639}{operator=}} (const \mbox{\hyperlink{classmap}{map}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmap_ad6002e118662d4618190aa402f241fc6}{operator==}} (const \mbox{\hyperlink{classmap}{map}} \&other) const
+\begin{DoxyCompactList}\small\item\em Comparison operator for the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{classmap_a9346d673196c88a72c1a851ff759a632}{operator$>$$>$}} (std\+::istream \&is, \mbox{\hyperlink{classmap}{map}} \&m)
+\begin{DoxyCompactList}\small\item\em Input operator for the map. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classmap_afed7678b2efb903d26dd4c46d0fc9ec2}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classmap}{map}} \&m)
+\begin{DoxyCompactList}\small\item\em Output operator for the map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing the game map. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmap_acfeab2512fc09e4d548a58136db97f18}\label{classmap_acfeab2512fc09e4d548a58136db97f18} 
+\index{map@{map}!map@{map}}
+\index{map@{map}!map@{map}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily map\+::map (\begin{DoxyParamCaption}\item[{int}]{initial\+Length,  }\item[{int}]{initial\+Height,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{initial\+Fields }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Length} & Initial length of the map. \\
+\hline
+{\em initial\+Height} & Initial height of the map. \\
+\hline
+{\em initial\+Fields} & Initial values for the map fields. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmap_a5e4bbde3bc0bbd47966331c57827c47e}\label{classmap_a5e4bbde3bc0bbd47966331c57827c47e} 
+\index{map@{map}!map@{map}}
+\index{map@{map}!map@{map}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily map\+::map (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmap}{map}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another map object being copied. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmap_aaf40abc9366f19c64c56c5de6365a639}\label{classmap_aaf40abc9366f19c64c56c5de6365a639} 
+\index{map@{map}!operator=@{operator=}}
+\index{operator=@{operator=}!map@{map}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classmap}{map}} \& map\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmap}{map}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another map object being assigned. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a reference to the current map object. 
+\end{DoxyReturn}
+\Hypertarget{classmap_ad6002e118662d4618190aa402f241fc6}\label{classmap_ad6002e118662d4618190aa402f241fc6} 
+\index{map@{map}!operator==@{operator==}}
+\index{operator==@{operator==}!map@{map}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool map\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classmap}{map}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator for the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & Another map object being compared to the current object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the objects are equal, and false otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classmap_afed7678b2efb903d26dd4c46d0fc9ec2}\label{classmap_afed7678b2efb903d26dd4c46d0fc9ec2} 
+\index{map@{map}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!map@{map}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classmap}{map}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output operator for the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream. \\
+\hline
+{\em m} & Reference to the map object being output. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a reference to the output stream. 
+\end{DoxyReturn}
+\Hypertarget{classmap_a9346d673196c88a72c1a851ff759a632}\label{classmap_a9346d673196c88a72c1a851ff759a632} 
+\index{map@{map}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!map@{map}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{classmap}{map}} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Input operator for the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream. \\
+\hline
+{\em m} & Reference to the map object where values are read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a reference to the input stream. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/smyrf/source/repos/zmeika/zmeika/map.\+h\item 
+C\+:/\+Users/smyrf/source/repos/zmeika/zmeika/map.\+cpp\end{DoxyCompactItemize}
